@@ -21,6 +21,8 @@ export const product = {
     "60 Tage Geld-zurück-Garantie",
   ],
   gallery: Array.from({ length: 7 }, (_, i) => `/produto/${String(i + 1).padStart(2, "0")}.jpg`),
+  /** Lange Beschreibung: dieselben 11 Grafiken wie im französischen Shop, auf Deutsch neu beschriftet (public/desc). */
+  descriptionImages: Array.from({ length: 11 }, (_, i) => `/desc/${String(i + 1).padStart(2, "0")}.jpg`),
   guarantees: ["Kostenloser Versand", "Sichere Zahlung", "Begrenzter Vorrat"],
   ctaLabel: "IN DEN WARENKORB",
   stickyCtaLabel: "JETZT KAUFEN",
